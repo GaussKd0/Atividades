@@ -1,6 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-       //METODOS ACELERAR FREIAR E MARCHA RE ESTÃO INCLUIDOS NA CLASSE CARRO
+       Proprietario proprietario = new Proprietario();
+       proprietario.setBairro("Seila");
+       proprietario.setRua("RuaSeila");
+       proprietario.setNumeroCasa("15");
        Carro carro1 = new Carro();
        carro1.setProprietario("Pedro");
        carro1.setVelocidadeMaxima(220);
@@ -13,6 +16,8 @@ public class Main {
        carro1.setChassi("13HFA16307Z118010");
        carro1.setVolumeDeCombustivel(56);
        carro1.PrintarInformacoes();
+       carro1.Acelerar();
+       carro1.CalcularAutomoniaDaViagem(10,2);
 
     }
 }

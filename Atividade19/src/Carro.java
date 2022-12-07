@@ -209,4 +209,11 @@ public class Carro {
                 getVolumeDeCombustivel() + "\nTipo De Cambio: " + getTipoDoCambio() + "\nTopo De Teto: " + GetTetoSolar()
         );
     }
+    public void CalcularAutomoniaDaViagem(int ConsumoDaGasolina, int Tempo){
+        int Distancia = Tempo * getVelocidadeAtual();
+        int QuantidadeLitros = Distancia/ConsumoDaGasolina;
+        setVolumeDeCombustivel(getVolumeDeCombustivel() - QuantidadeLitros);
+        System.out.println("Se Seu Carro Andar " + Distancia +"KM Ele Vai Gastar " + QuantidadeLitros+ " Litros De Gasolina");
+        System.out.println("Quantidade De Gasolina Restante: " + getVolumeDeCombustivel());
+    }
 }
