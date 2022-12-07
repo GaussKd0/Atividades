@@ -9,6 +9,12 @@ public class main{
         blusa1.setTipo("Frio");
         blusa1.setMarca("Aleatoria");
         blusa1.Caracteristicas();
-        System.out.println(calca1.getMarca());
+        calca1.setTamanho("PP");
+        calca1.setCor("Preta");
+        calca1.setMaterial("Algodão");
+        calca1.setTipoDaCalca("Jeans");
+        calca1.setGenero("Masculina");
+        calca1.Caracteristicas();
+
     }
 }
