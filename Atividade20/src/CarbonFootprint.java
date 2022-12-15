@@ -1,3 +1,3 @@
-public interface Car {
+public interface CarbonFootprint {
     public int getCarbonFootprint();
 }
