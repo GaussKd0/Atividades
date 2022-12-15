@@ -1,3 +1,3 @@
-public class Car {
-
+public interface Car {
+    public int getCarbonFootprint();
 }
